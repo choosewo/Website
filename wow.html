@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu site</title>
+    <link rel="icon" type="image/x-icon" href="https://media.tenor.com/_iHP2IIpDyUAAAAM/gato-papu.gif">
+    <style>
+        body {
+            margin: 0;
+            background: #e0e0ff url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #222;
+        }
+        .sidebar {
+            width: 180px;
+            background: #99ccff;
+            border: 3px double #3366cc;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto;
+        }
+        .sidebar.left {
+            left: 0;
+            border-right: none;
+            border-radius: 0 20px 20px 0;
+        }
+        .sidebar.right {
+            right: 0;
+            border-left: none;
+            border-radius: 20px 0 0 20px;
+        }
+        .content {
+            margin: 0 200px;
+            padding: 40px 20px;
+            min-height: 100vh;
+            background: #fff8e1;
+            border-left: 4px solid #99ccff;
+            border-right: 4px solid #99ccff;
+            box-shadow: 0 0 20px #aaa;
+        }
+        h1 {
+            color: #3366cc;
+            text-shadow: 2px 2px 0 #fff, 4px 4px 0 #99ccff;
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+        a {
+            color: #003399;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .sidebar ul {
+            list-style: square inside;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .marquee {
+            width: 100%;
+            background: #ffcc00;
+            color: #222;
+            font-weight: bold;
+            padding: 6px 0;
+            border-bottom: 2px dashed #3366cc;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee 12s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(-100%);}
+            100% { transform: translateX(200%);}
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar left">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Minha Galeria</a></li>
+        </ul>
+    </div>
+    <div class="sidebar right">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="#downloads">Downloads</a></li>
+            <li><a href="https://discord.gg/mzYQDAS6gH" target="_blank">Meu Servidor</a></li>
+            <li><a href="https://github.com/felipe-damata" target="_blank">Meu Github</a></li>
+        </ul>
+    </div>
+    <div class="content" id="inicio">
+        <div class="marquee">&nbsp; Bem-vindo! &nbsp; | &nbsp; Confira meus programas em #downloads</div>
+        <h1>Meu Site</h1>
+        <p>
+            Este é meu servidor pessoal, onde compartilho meus projetos e interesses.
+        </p>
+        <p>
+            Sinta-se à vontade para explorar meu site!
+        </p>
+        <img src="https://i.gifer.com/C4Iv.gif" alt="Gif animado" style="border: 2px solid #3366cc; margin-top: 20px;">
+    </div>
+    <div class="content" id="sobre">
+        <div class="marquee">&nbsp; Sobre o meu site hehe &nbsp;</div>
+        <h1>Sobre</h1>
+        <p>
+            criei este espaço para compartilhar meus projetos e interesses com o mundo.
+        </p>
+        <p>
+            Aqui você encontrará informações sobre mim, meus projetos e links úteis.
+        </p>
+        <img src="https://i.gifer.com/3he0.gif" alt="Gif animado" style="margin-top: 20px;">
+    </div>
+    <div class="content" id="galeria">
+        <div class="marquee">&nbsp; Nada pra mostrar por enquanto.... </div>
+        <h1>Galeria</h1>
+        <p>
+            nada pra mostar :(
+        </p>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiajmfi9H5Hw3-DgrORLt1vzccQ9lhi-xcS2-WJh6KYVCkQy5ZOFoGVofA_m9jUWO2Ou1D2uBSkbFpbknsAuBkxdGc-_KdpPp058yQMhg8ePxg514X69IWMpPeUbRrSR7nJ_i5DrOkq39Q/s1600/slide_355109_3892089_free.gif" alt="Gif animado" style="margin-top: 20px;">
+    </div>
+    <div class="content" id="downloads">
+        <div class="marquee">&nbsp;DOWNLOADS AQUI</div>
+        <h1>downloads:</h1>
+        <p>
+            Exemplo winapi32
+        </p>
+        <a href="exemplo.exe" download><button>fazer download de exemplo.exe AGORA!</button></a>
+        <p>
+            Exemplo winapi32 manifest
+        </p>
+        <a href="exemplo.manifest.fix.zip" download><button>fazer download de exemplo.manifest.fix.zip AGORA!</button></a>
+        <p>
+            Melhor programa de todos
+        </p>
+        <a href="MELHOR-programa-de-todos.exe" download><button>fazer download de Melhor programa de todos.exe AGORA!</button></a><br>
+        <p>
+        <img src="https://i.redd.it/jdmmdof7jm4e1.gif" alt="Gif animado" style="margin-top: 20px;">
+    </div>
+</body>
+</html>
